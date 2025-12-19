@@ -12,8 +12,6 @@
 #include "mqtt_client.h"
 #include "minimal_wifi.h"
 
-#define WIFI_SSID      "tufts_eecs"
-#define WIFI_PASS      "foundedin1883"
 
 #define BROKER_URI "mqtt://bell-mqtt.eecs.tufts.edu"
 
