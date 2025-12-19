@@ -20,8 +20,8 @@
  * isn't available. */
 #define ADC_CHANNEL ADC_CHANNEL_0
 
-#define WIFI_SSID      "tufts_eecs"
-#define WIFI_PASS      "foundedin1883"
+#define WIFI_SSID      ""
+#define WIFI_PASS      ""
 
 #define BROKER_URI "mqtt://bell-mqtt.eecs.tufts.edu"
 
