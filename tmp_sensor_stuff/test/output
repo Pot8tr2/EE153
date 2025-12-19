@@ -1,0 +1,1016 @@
+I (604) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (614) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (634) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (644) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (674) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:6, ssn:0, winSize:64
+I (1644) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1644) wifi station: got ip:10.243.80.56
+I (1644) wifi station: connected to AP SSID: Tufts_Wireless
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (354) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (372) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (424) main_task: Started on CPU0
+I (444) main_task: Calling app_main()
+sleep time is3483
+I (444) pp: pp rom version: 9387209
+I (454) net80211: net80211 rom version: 9387209
+I (464) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (464) wifi:wifi firmware version: f3dbad7
+I (464) wifi:wifi certification version: v7.0
+I (464) wifi:config NVS flash: enabled
+I (464) wifi:config nano formatting: disabled
+I (474) wifi:Init data frame dynamic rx buffer num: 32
+I (474) wifi:Init static rx mgmt buffer num: 5
+I (484) wifi:Init management short buffer num: 32
+I (484) wifi:Init dynamic tx buffer num: 32
+I (484) wifi:Init static tx FG buffer num: 2
+I (494) wifi:Init static rx buffer size: 1600
+I (494) wifi:Init static rx buffer num: 10
+I (504) wifi:Init dynamic rx buffer num: 32
+I (504) wifi_init: rx ba win: 6
+I (504) wifi_init: accept mbox: 6
+I (514) wifi_init: tcpip mbox: 32
+I (514) wifi_init: udp mbox: 6
+I (514) wifi_init: tcp mbox: 6
+I (514) wifi_init: tcp tx win: 5760
+I (524) wifi_init: tcp rx win: 5760
+I (524) wifi_init: tcp mss: 1440
+I (524) wifi_init: WiFi IRAM OP enabled
+I (534) wifi_init: WiFi RX IRAM OP enabled
+I (534) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (574) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (574) wifi:enable tsf
+I (574) wifi station: WiFi configured, waiting for callbacks.
+I (574) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (584) wifi:state: init -> auth (0xb0)
+I (584) wifi:state: auth -> assoc (0x0)
+I (594) wifi:state: assoc -> run (0x10)
+I (604) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (604) wifi:security: Open Auth, phy: bgn, rssi: -55
+I (604) wifi:pm start, type: 1
+
+I (604) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (614) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (634) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (674) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1644) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1644) wifi station: got ip:10.243.80.56
+I (1644) wifi station: connected to AP SSID: Tufts_Wireless
+Initializing I2C...I (1654) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:6, ssn:0, winSize:64
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (355) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (373) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (425) main_task: Started on CPU0
+I (445) main_task: Calling app_main()
+sleep time is3483
+I (445) pp: pp rom version: 9387209
+I (455) net80211: net80211 rom version: 9387209
+I (465) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (465) wifi:wifi firmware version: f3dbad7
+I (465) wifi:wifi certification version: v7.0
+I (465) wifi:config NVS flash: enabled
+I (465) wifi:config nano formatting: disabled
+I (475) wifi:Init data frame dynamic rx buffer num: 32
+I (475) wifi:Init static rx mgmt buffer num: 5
+I (485) wifi:Init management short buffer num: 32
+I (485) wifi:Init dynamic tx buffer num: 32
+I (485) wifi:Init static tx FG buffer num: 2
+I (495) wifi:Init static rx buffer size: 1600
+I (495) wifi:Init static rx buffer num: 10
+I (505) wifi:Init dynamic rx buffer num: 32
+I (505) wifi_init: rx ba win: 6
+I (505) wifi_init: accept mbox: 6
+I (515) wifi_init: tcpip mbox: 32
+I (515) wifi_init: udp mbox: 6
+I (515) wifi_init: tcp mbox: 6
+I (515) wifi_init: tcp tx win: 5760
+I (525) wifi_init: tcp rx win: 5760
+I (525) wifi_init: tcp mss: 1440
+I (525) wifi_init: WiFi IRAM OP enabled
+I (535) wifi_init: WiFi RX IRAM OP enabled
+I (535) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (575) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (575) wifi:enable tsf
+I (575) wifi station: WiFi configured, waiting for callbacks.
+I (575) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (585) wifi:state: init -> auth (0xb0)
+I (605) wifi:state: auth -> assoc (0x0)
+I (615) wifi:state: assoc -> run (0x10)
+I (615) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (615) wifi:security: Open Auth, phy: bgn, rssi: -58
+I (625) wifi:pm start, type: 1
+
+I (625) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (635) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (645) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (695) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1525) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:3, ssn:0, winSize:64
+I (1655) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1655) wifi station: got ip:10.243.80.56
+I (1655) wifi station: connected to AP SSID: Tufts_Wireless
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (355) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (372) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (424) main_task: Started on CPU0
+I (444) main_task: Calling app_main()
+sleep time is3483
+I (444) pp: pp rom version: 9387209
+I (454) net80211: net80211 rom version: 9387209
+I (464) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (464) wifi:wifi firmware version: f3dbad7
+I (464) wifi:wifi certification version: v7.0
+I (464) wifi:config NVS flash: enabled
+I (464) wifi:config nano formatting: disabled
+I (474) wifi:Init data frame dynamic rx buffer num: 32
+I (474) wifi:Init static rx mgmt buffer num: 5
+I (484) wifi:Init management short buffer num: 32
+I (484) wifi:Init dynamic tx buffer num: 32
+I (484) wifi:Init static tx FG buffer num: 2
+I (494) wifi:Init static rx buffer size: 1600
+I (494) wifi:Init static rx buffer num: 10
+I (504) wifi:Init dynamic rx buffer num: 32
+I (504) wifi_init: rx ba win: 6
+I (504) wifi_init: accept mbox: 6
+I (514) wifi_init: tcpip mbox: 32
+I (514) wifi_init: udp mbox: 6
+I (514) wifi_init: tcp mbox: 6
+I (514) wifi_init: tcp tx win: 5760
+I (524) wifi_init: tcp rx win: 5760
+I (524) wifi_init: tcp mss: 1440
+I (524) wifi_init: WiFi IRAM OP enabled
+I (534) wifi_init: WiFi RX IRAM OP enabled
+I (534) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (574) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (574) wifi:enable tsf
+I (574) wifi station: WiFi configured, waiting for callbacks.
+I (584) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (584) wifi:state: init -> auth (0xb0)
+I (584) wifi:state: auth -> assoc (0x0)
+I (594) wifi:state: assoc -> run (0x10)
+I (594) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (594) wifi:security: Open Auth, phy: bgn, rssi: -60
+I (604) wifi:pm start, type: 1
+
+I (604) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (614) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (634) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (864) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (874) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:3, ssn:0, winSize:64
+I (1644) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1644) wifi station: got ip:10.243.80.56
+I (1644) wifi station: connected to AP SSID: Tufts_Wireless
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (354) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (372) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (424) main_task: Started on CPU0
+I (444) main_task: Calling app_main()
+sleep time is3483
+I (444) pp: pp rom version: 9387209
+I (454) net80211: net80211 rom version: 9387209
+I (464) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (464) wifi:wifi firmware version: f3dbad7
+I (464) wifi:wifi certification version: v7.0
+I (464) wifi:config NVS flash: enabled
+I (464) wifi:config nano formatting: disabled
+I (474) wifi:Init data frame dynamic rx buffer num: 32
+I (474) wifi:Init static rx mgmt buffer num: 5
+I (484) wifi:Init management short buffer num: 32
+I (484) wifi:Init dynamic tx buffer num: 32
+I (484) wifi:Init static tx FG buffer num: 2
+I (494) wifi:Init static rx buffer size: 1600
+I (494) wifi:Init static rx buffer num: 10
+I (504) wifi:Init dynamic rx buffer num: 32
+I (504) wifi_init: rx ba win: 6
+I (504) wifi_init: accept mbox: 6
+I (514) wifi_init: tcpip mbox: 32
+I (514) wifi_init: udp mbox: 6
+I (514) wifi_init: tcp mbox: 6
+I (514) wifi_init: tcp tx win: 5760
+I (524) wifi_init: tcp rx win: 5760
+I (524) wifi_init: tcp mss: 1440
+I (524) wifi_init: WiFi IRAM OP enabled
+I (534) wifi_init: WiFi RX IRAM OP enabled
+I (534) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (574) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (574) wifi:enable tsf
+I (574) wifi station: WiFi configured, waiting for callbacks.
+I (574) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (584) wifi:state: init -> auth (0xb0)
+I (604) wifi:state: auth -> assoc (0x0)
+I (614) wifi:state: assoc -> run (0x10)
+I (614) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (614) wifi:security: Open Auth, phy: bgn, rssi: -57
+I (614) wifi:pm start, type: 1
+
+I (624) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (624) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (644) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (734) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1654) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1654) wifi station: got ip:10.243.80.56
+I (1654) wifi station: connected to AP SSID: Tufts_Wireless
+Initializing I2C...I (1664) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:6, ssn:0, winSize:64
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (355) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (373) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (425) main_task: Started on CPU0
+I (445) main_task: Calling app_main()
+sleep time is3483
+I (445) pp: pp rom version: 9387209
+I (455) net80211: net80211 rom version: 9387209
+I (465) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (465) wifi:wifi firmware version: f3dbad7
+I (465) wifi:wifi certification version: v7.0
+I (465) wifi:config NVS flash: enabled
+I (465) wifi:config nano formatting: disabled
+I (475) wifi:Init data frame dynamic rx buffer num: 32
+I (475) wifi:Init static rx mgmt buffer num: 5
+I (485) wifi:Init management short buffer num: 32
+I (485) wifi:Init dynamic tx buffer num: 32
+I (485) wifi:Init static tx FG buffer num: 2
+I (495) wifi:Init static rx buffer size: 1600
+I (495) wifi:Init static rx buffer num: 10
+I (505) wifi:Init dynamic rx buffer num: 32
+I (505) wifi_init: rx ba win: 6
+I (505) wifi_init: accept mbox: 6
+I (515) wifi_init: tcpip mbox: 32
+I (515) wifi_init: udp mbox: 6
+I (515) wifi_init: tcp mbox: 6
+I (515) wifi_init: tcp tx win: 5760
+I (525) wifi_init: tcp rx win: 5760
+I (525) wifi_init: tcp mss: 1440
+I (525) wifi_init: WiFi IRAM OP enabled
+I (535) wifi_init: WiFi RX IRAM OP enabled
+I (535) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (575) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (575) wifi:enable tsf
+I (575) wifi station: WiFi configured, waiting for callbacks.
+I (575) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (585) wifi:state: init -> auth (0xb0)
+I (585) wifi:state: auth -> assoc (0x0)
+I (595) wifi:state: assoc -> run (0x10)
+I (595) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (595) wifi:security: Open Auth, phy: bgn, rssi: -59
+I (605) wifi:pm start, type: 1
+
+I (605) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (615) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (625) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (635) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (1645) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1645) wifi station: got ip:10.243.80.56
+I (1645) wifi station: connected to AP SSID: Tufts_Wireless
+Initializing I2C...I (1655) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:6, ssn:0, winSize:64
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (355) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (373) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (425) main_task: Started on CPU0
+I (445) main_task: Calling app_main()
+sleep time is3483
+I (445) pp: pp rom version: 9387209
+I (455) net80211: net80211 rom version: 9387209
+I (465) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (465) wifi:wifi firmware version: f3dbad7
+I (465) wifi:wifi certification version: v7.0
+I (465) wifi:config NVS flash: enabled
+I (465) wifi:config nano formatting: disabled
+I (475) wifi:Init data frame dynamic rx buffer num: 32
+I (475) wifi:Init static rx mgmt buffer num: 5
+I (485) wifi:Init management short buffer num: 32
+I (485) wifi:Init dynamic tx buffer num: 32
+I (485) wifi:Init static tx FG buffer num: 2
+I (495) wifi:Init static rx buffer size: 1600
+I (495) wifi:Init static rx buffer num: 10
+I (505) wifi:Init dynamic rx buffer num: 32
+I (505) wifi_init: rx ba win: 6
+I (505) wifi_init: accept mbox: 6
+I (515) wifi_init: tcpip mbox: 32
+I (515) wifi_init: udp mbox: 6
+I (515) wifi_init: tcp mbox: 6
+I (515) wifi_init: tcp tx win: 5760
+I (525) wifi_init: tcp rx win: 5760
+I (525) wifi_init: tcp mss: 1440
+I (525) wifi_init: WiFi IRAM OP enabled
+I (535) wifi_init: WiFi RX IRAM OP enabled
+I (535) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (575) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (575) wifi:enable tsf
+I (575) wifi station: WiFi configured, waiting for callbacks.
+I (585) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (585) wifi:state: init -> auth (0xb0)
+I (595) wifi:state: auth -> assoc (0x0)
+I (595) wifi:state: assoc -> run (0x10)
+I (595) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (605) wifi:security: Open Auth, phy: bgn, rssi: -60
+I (605) wifi:pm start, type: 1
+
+I (605) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (615) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (645) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (645) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1655) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1655) wifi station: got ip:10.243.80.56
+I (1655) wifi station: connected to AP SSID: Tufts_Wireless
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (355) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (372) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (424) main_task: Started on CPU0
+I (444) main_task: Calling app_main()
+sleep time is3483
+I (444) pp: pp rom version: 9387209
+I (454) net80211: net80211 rom version: 9387209
+I (464) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (464) wifi:wifi firmware version: f3dbad7
+I (464) wifi:wifi certification version: v7.0
+I (464) wifi:config NVS flash: enabled
+I (464) wifi:config nano formatting: disabled
+I (474) wifi:Init data frame dynamic rx buffer num: 32
+I (474) wifi:Init static rx mgmt buffer num: 5
+I (484) wifi:Init management short buffer num: 32
+I (484) wifi:Init dynamic tx buffer num: 32
+I (484) wifi:Init static tx FG buffer num: 2
+I (494) wifi:Init static rx buffer size: 1600
+I (494) wifi:Init static rx buffer num: 10
+I (504) wifi:Init dynamic rx buffer num: 32
+I (504) wifi_init: rx ba win: 6
+I (504) wifi_init: accept mbox: 6
+I (514) wifi_init: tcpip mbox: 32
+I (514) wifi_init: udp mbox: 6
+I (514) wifi_init: tcp mbox: 6
+I (514) wifi_init: tcp tx win: 5760
+I (524) wifi_init: tcp rx win: 5760
+I (524) wifi_init: tcp mss: 1440
+I (524) wifi_init: WiFi IRAM OP enabled
+I (534) wifi_init: WiFi RX IRAM OP enabled
+I (534) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (574) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (574) wifi:enable tsf
+I (574) wifi station: WiFi configured, waiting for callbacks.
+I (574) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (584) wifi:state: init -> auth (0xb0)
+I (594) wifi:state: auth -> assoc (0x0)
+I (604) wifi:state: assoc -> run (0x10)
+I (604) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (604) wifi:security: Open Auth, phy: bgn, rssi: -56
+I (604) wifi:pm start, type: 1
+
+I (614) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (614) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (634) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (664) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1644) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1644) wifi station: got ip:10.243.80.56
+I (1644) wifi station: connected to AP SSID: Tufts_Wireless
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (355) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (373) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (425) main_task: Started on CPU0
+I (445) main_task: Calling app_main()
+sleep time is3483
+I (445) pp: pp rom version: 9387209
+I (455) net80211: net80211 rom version: 9387209
+I (465) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (465) wifi:wifi firmware version: f3dbad7
+I (465) wifi:wifi certification version: v7.0
+I (465) wifi:config NVS flash: enabled
+I (465) wifi:config nano formatting: disabled
+I (475) wifi:Init data frame dynamic rx buffer num: 32
+I (475) wifi:Init static rx mgmt buffer num: 5
+I (485) wifi:Init management short buffer num: 32
+I (485) wifi:Init dynamic tx buffer num: 32
+I (485) wifi:Init static tx FG buffer num: 2
+I (495) wifi:Init static rx buffer size: 1600
+I (495) wifi:Init static rx buffer num: 10
+I (505) wifi:Init dynamic rx buffer num: 32
+I (505) wifi_init: rx ba win: 6
+I (505) wifi_init: accept mbox: 6
+I (515) wifi_init: tcpip mbox: 32
+I (515) wifi_init: udp mbox: 6
+I (515) wifi_init: tcp mbox: 6
+I (515) wifi_init: tcp tx win: 5760
+I (525) wifi_init: tcp rx win: 5760
+I (525) wifi_init: tcp mss: 1440
+I (525) wifi_init: WiFi IRAM OP enabled
+I (535) wifi_init: WiFi RX IRAM OP enabled
+I (535) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (575) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (575) wifi:enable tsf
+I (575) wifi station: WiFi configured, waiting for callbacks.
+I (575) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (585) wifi:state: init -> auth (0xb0)
+I (585) wifi:state: auth -> assoc (0x0)
+I (595) wifi:state: assoc -> run (0x10)
+I (595) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (595) wifi:security: Open Auth, phy: bgn, rssi: -57
+I (605) wifi:pm start, type: 1
+
+I (605) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (615) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (635) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (635) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1445) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:3, ssn:0, winSize:64
+I (1645) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1645) wifi station: got ip:10.243.80.56
+I (1645) wifi station: connected to AP SSID: Tufts_Wireless
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (355) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (373) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (425) main_task: Started on CPU0
+I (445) main_task: Calling app_main()
+sleep time is3483
+I (445) pp: pp rom version: 9387209
+I (455) net80211: net80211 rom version: 9387209
+I (465) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (465) wifi:wifi firmware version: f3dbad7
+I (465) wifi:wifi certification version: v7.0
+I (465) wifi:config NVS flash: enabled
+I (465) wifi:config nano formatting: disabled
+I (475) wifi:Init data frame dynamic rx buffer num: 32
+I (475) wifi:Init static rx mgmt buffer num: 5
+I (485) wifi:Init management short buffer num: 32
+I (485) wifi:Init dynamic tx buffer num: 32
+I (485) wifi:Init static tx FG buffer num: 2
+I (495) wifi:Init static rx buffer size: 1600
+I (495) wifi:Init static rx buffer num: 10
+I (505) wifi:Init dynamic rx buffer num: 32
+I (505) wifi_init: rx ba win: 6
+I (505) wifi_init: accept mbox: 6
+I (515) wifi_init: tcpip mbox: 32
+I (515) wifi_init: udp mbox: 6
+I (515) wifi_init: tcp mbox: 6
+I (515) wifi_init: tcp tx win: 5760
+I (525) wifi_init: tcp rx win: 5760
+I (525) wifi_init: tcp mss: 1440
+I (525) wifi_init: WiFi IRAM OP enabled
+I (535) wifi_init: WiFi RX IRAM OP enabled
+I (535) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (575) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (575) wifi:enable tsf
+I (575) wifi station: WiFi configured, waiting for callbacks.
+I (575) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (585) wifi:state: init -> auth (0xb0)
+I (585) wifi:state: auth -> assoc (0x0)
+I (615) wifi:state: assoc -> run (0x10)
+I (615) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (615) wifi:security: Open Auth, phy: bgn, rssi: -60
+I (625) wifi:pm start, type: 1
+
+I (625) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (635) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (645) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (775) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1395) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:3, ssn:0, winSize:64
+I (1655) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1655) wifi station: got ip:10.243.80.56
+I (1655) wifi station: connected to AP SSID: Tufts_Wireless
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc40
+load:0x403ce710,len:0x3008
+entry 0x403cbf10
+I (30) boot: ESP-IDF 5.5.0 2nd stage bootloader
+I (30) boot: compile time Dec 11 2025 00:51:34
+I (30) boot: chip revision: v0.4
+I (30) boot: efuse block revision: v1.3
+I (34) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (41) boot.esp32c3: SPI Flash Size : 4MB
+I (45) boot: Enabling RNG early entropy source...
+I (50) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (72) boot:  2 factory          factory app      00 00 00010000 00100000
+I (78) boot: End of partition table
+I (81) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=1f41ch (128028) map
+I (109) esp_image: segment 1: paddr=0002f444 vaddr=3fc97000 size=00bd4h (  3028) load
+I (110) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=b3af8h (735992) map
+I (230) esp_image: segment 3: paddr=000e3b20 vaddr=3fc97bd4 size=02298h (  8856) load
+I (232) esp_image: segment 4: paddr=000e5dc0 vaddr=40380000 size=16e5ch ( 93788) load
+I (251) esp_image: segment 5: paddr=000fcc24 vaddr=50000000 size=0003ch (    60) load
+I (258) boot: Loaded app from partition at offset 0x10000
+I (259) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (332) cpu_start: Pro cpu start user code
+I (332) cpu_start: cpu freq: 160000000 Hz
+I (332) app_init: Application information:
+I (332) app_init: Project name:     tmp_sensor_stuff
+I (337) app_init: App version:      879cc32-dirty
+I (341) app_init: Compile time:     Dec 11 2025 00:51:15
+I (346) app_init: ELF file SHA256:  95fc4bfc0...
+I (351) app_init: ESP-IDF:          5.5.0
+I (355) efuse_init: Min chip rev:     v0.3
+I (358) efuse_init: Max chip rev:     v1.99 
+I (362) efuse_init: Chip rev:         v0.4
+I (366) heap_init: Initializing. RAM available for dynamic allocation:
+I (372) heap_init: At 3FC9E780 len 00021880 (134 KiB): RAM
+I (378) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (384) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (390) heap_init: At 5000003C len 00001FAC (7 KiB): RTCRAM
+I (396) spi_flash: detected chip: generic
+I (399) spi_flash: flash io: dio
+W (402) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (412) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (418) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (424) main_task: Started on CPU0
+I (444) main_task: Calling app_main()
+sleep time is3483
+I (444) pp: pp rom version: 9387209
+I (454) net80211: net80211 rom version: 9387209
+I (464) wifi:wifi driver task: 3fca72d4, prio:23, stack:6656, core=0
+I (464) wifi:wifi firmware version: f3dbad7
+I (464) wifi:wifi certification version: v7.0
+I (464) wifi:config NVS flash: enabled
+I (464) wifi:config nano formatting: disabled
+I (474) wifi:Init data frame dynamic rx buffer num: 32
+I (474) wifi:Init static rx mgmt buffer num: 5
+I (484) wifi:Init management short buffer num: 32
+I (484) wifi:Init dynamic tx buffer num: 32
+I (484) wifi:Init static tx FG buffer num: 2
+I (494) wifi:Init static rx buffer size: 1600
+I (494) wifi:Init static rx buffer num: 10
+I (504) wifi:Init dynamic rx buffer num: 32
+I (504) wifi_init: rx ba win: 6
+I (504) wifi_init: accept mbox: 6
+I (514) wifi_init: tcpip mbox: 32
+I (514) wifi_init: udp mbox: 6
+I (514) wifi_init: tcp mbox: 6
+I (514) wifi_init: tcp tx win: 5760
+I (524) wifi_init: tcp rx win: 5760
+I (524) wifi_init: tcp mss: 1440
+I (524) wifi_init: WiFi IRAM OP enabled
+I (534) wifi_init: WiFi RX IRAM OP enabled
+I (534) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21
+I (574) wifi:mode : sta (10:20:ba:dd:95:fc)
+I (574) wifi:enable tsf
+I (574) wifi station: WiFi configured, waiting for callbacks.
+I (574) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (584) wifi:state: init -> auth (0xb0)
+I (584) wifi:state: auth -> assoc (0x0)
+I (594) wifi:state: assoc -> run (0x10)
+I (594) wifi:connected with Tufts_Wireless, aid = 2, channel 1, BW20, bssid = 5c:64:f1:6b:d8:a6
+I (594) wifi:security: Open Auth, phy: bgn, rssi: -55
+I (604) wifi:pm start, type: 1
+
+I (604) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (614) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (644) wifi:<ba-add>idx:0 (ifx:0, 5c:64:f1:6b:d8:a6), tid:0, ssn:2, winSize:64
+I (694) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (794) wifi:<ba-add>idx:1 (ifx:0, 5c:64:f1:6b:d8:a6), tid:3, ssn:0, winSize:64
+I (1654) esp_netif_handlers: sta ip: 10.243.80.56, mask: 255.255.240.0, gw: 10.243.80.1
+I (1654) wifi station: got ip:10.243.80.56
+I (1654) wifi station: connected to AP SSID: Tufts_Wireless

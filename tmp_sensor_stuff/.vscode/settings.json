@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "adc_oneshot.h": "c",
+        "esp_netif.h": "c",
+        "string.h": "c",
+        "minimal_wifi.h": "c",
+        "esp_timer.h": "c",
+        "esp_sleep.h": "c"
+    }
+}
